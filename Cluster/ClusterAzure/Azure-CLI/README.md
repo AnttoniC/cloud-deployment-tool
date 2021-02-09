@@ -2,7 +2,7 @@
 # Azure  
 <br>
 
-![img](https://github.com/AnttoniC/Gerencia/blob/master/Img/zab2.jpg)
+![img](https://github.com/AnttoniC/cloud-deployment-tool/blob/main/Cluster/ClusterAzure/Azure-CLI/IMG/azure.png)
 
 ## Instalação do Azure CLI no Linux
 Existem duas opções para instalar a CLI do Azure em seu sistema. Primeiro, você pode executar um único comando que baixará um script de instalação e executará os comandos de instalação para você. Ou se preferir, você mesmo pode executar os comandos de instalação em um processo passo a passo. Ambos os métodos são fornecidos abaixo.<br>
