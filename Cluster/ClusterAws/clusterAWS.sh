@@ -1,4 +1,4 @@
-#!/bin/bash -vx
+#!/bin/bash
 
 touch cluster_template.json
 
