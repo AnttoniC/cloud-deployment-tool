@@ -44,10 +44,10 @@ ajuda() {
 while getopts "c:n:i:h" opt; do
     case $opt in
       c) CLOUD="$OPTARG" 
-	        ((c == "_aws" || c == "_azure" ))
+	((c == "_aws" || c == "_azure" ))
       ;;
-	    n) NODE="$OPTARG"
-          ((n == 2 || n == 4 || n == 6 || n == 8)) || usage
+      n) NODE="$OPTARG"
+        ((n == 2 || n == 4 || n == 6 || n == 8)) || usage
       ;;
       i) TYPE="$OPTARG"
       ;;
@@ -102,7 +102,3 @@ declare -a arrType_azure=("Standard_B1s" "Standard_B1ms")
 else
  echo "$TYPE não é valido!!"
 fi
-
-
-
-
