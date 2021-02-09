@@ -60,14 +60,12 @@ done
 
 echo $CLOUD
 if [ -z "$TYPE" ]; then
-  usage
-  echo "AQUI 01"  
+  usage  
   exit 1 # error
 else
   if [ -n "$NODE" ]; then
     echo "$NODE and $TYPE"
   else
-    echo "AQUI 02"
     usage
   fi
 fi 
