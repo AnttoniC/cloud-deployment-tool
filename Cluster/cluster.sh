@@ -6,7 +6,8 @@ TYPE=""
 export NODE
 export TYPE
 
-usage() { echo "Usage: $0 -c [_aws ou _azure] [-n <2|4|6|8>] [-i <string>]"; }
+usage() { echo "Usage: $0 -c [_aws ou _azure] [-n <2|4|6|8>] [-i <string>]"
+	  echo "help: $0 -h"; }
 
 ajuda() {   
             echo ""
@@ -77,7 +78,7 @@ if [ $CLOUD == "_aws" ]; then
     do
        if [ "$i" == "$TYPE" ]; then
 	 echo "$i"
-         ./clusterAWS.sh
+         ./deployAWS.sh
        else
          echo "Erro na execução do Cluster na AWS"
 	 usage
@@ -91,7 +92,7 @@ declare -a arrType_azure=("Standard_B1s" "Standard_B1ms")
     do
        if [ "$e" == "$TYPE" ]; then
 	 echo "$e"
-       	 ./clusterAzure.sh
+       	 ./deployAzure.sh
        else
          echo "Erro na execução do Cluster na Azure"
 	 usage
