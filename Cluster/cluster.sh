@@ -33,11 +33,11 @@ ajuda() {
             echo ""
             echo "        Implantando Cluster na AZURE"
             echo ""
-            echo "        ./clusterAzure.sh -c _azure -n 2 -i Standard_B1s"
+            echo "        ./cluster.sh -c _azure -n 2 -i Standard_B1s"
             echo ""
             echo "        Implantando Cluster na AWS"
             echo ""
-            echo "        ./clusterAWS.sh -c _aws -n 2 -i t2.micro"; }
+            echo "        ./cluster.sh -c _aws -n 2 -i t2.micro"; }
 
 
 
