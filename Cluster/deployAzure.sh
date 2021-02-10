@@ -3,7 +3,6 @@
 
 set +x
 
-touch ~/mod_cluster.json
 ResourceGroup="RG"`date +%H%M%S`
 # A conta de armazenamento deve ser única.
 StorageAccount="storage"`date +%H%M%S`
@@ -20,7 +19,7 @@ ssh-keygen -f ~/.ssh/$KeyName -t rsa -N azure
 
 KEYAZURE=$(cat ~/.ssh/Key_Azure.pub)
 
-
+touch ~/mod_cluster.json
 
 S='$schema'
 
@@ -656,6 +655,7 @@ echo "Aperte [enter] duas vezes para finalizar o Grupo de Recursos."
 read -p "Primeira vez."
 read -p "Segunda vez."
 echo "Deletando chave publica(Key_Azure e Key_Azure.pub )."
-sudo rm -rf  ~/.ssh/Key_Azure*
+rm -rf ~/.ssh/Key_Azure*
+rm -rf ~/mod_cluster.json
 echo "Digite (y) para deletar o Grupo de Recurso: $ResourceGroup"
 az group delete -n $ResourceGroup 
