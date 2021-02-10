@@ -1,11 +1,4 @@
 #!/bin/bash
-
-touch cluster_template.json
-
-NODE=""
-TYPE=""
-
-
 #criando chave para acessar as instancia do cluster
 KEYNAME=clusterKey
 aws ec2 create-key-pair --key-name $KEYNAME --query 'KeyMaterial' --output text > $KEYNAME.pem
@@ -14,6 +7,7 @@ chmod 400 $KEYNAME.pem
 # Gera nome único para a pilha
 STACKNAME="cluster"`date +%H%M%S`
 
+touch cluster_template.json
 cat << EOF >> cluster_template.json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
@@ -273,10 +267,6 @@ ParameterKey=InstanceType,ParameterValue=$TYPE \
 ParameterKey=KeyName,ParameterValue=$KEYNAME \
 ParameterKey=FaixaIPVPC,ParameterValue="10.0.0.0/16" \
 ParameterKey=FaixaIPSubrede,ParameterValue="10.0.10.0/24"
-
-
-echo $TYPE
-exit 1
 
 STATUS=$(aws cloudformation describe-stacks --stack-name "$STACKNAME" --query 'Stacks[*].StackStatus' --output text)
 var=1
