@@ -12,8 +12,8 @@ Veja a seguir um resumo dos comandos de instalação explicados a seguir que voc
 
 ## Opção 1: Instalar a AWS CLI versão 1 usando o instalador empacotado com sudo
 Para obter a versão mais recente da AWS CLI, use o seguinte bloco de comandos:<br>
-`curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"` 
-`unzip awscli-bundle.zip` 
+`curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"`<br>
+`unzip awscli-bundle.zip` <br>
 `sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws`
 
 ## Opção 2: Instalar a AWS CLI versão 1 usando pip
