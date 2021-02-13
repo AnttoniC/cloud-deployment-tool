@@ -52,5 +52,11 @@ Para implantar um cluster na azure execute o seguinte comando:<br>
 `./cluster -c _azure -n 2 -i Standard_B1s` <br>
 ![img](https://github.com/AnttoniC/cloud-deployment-tool/blob/main/Cluster/Aws-CLI/IMG/deployAzure.png) <br>
 
+## Acessando o Clsuter
 
+Na aws: <br>
+![img](https://github.com/AnttoniC/cloud-deployment-tool/blob/main/Cluster/Aws-CLI/IMG/acessoAws.png) <br>
+
+Na Azure: <br>
+![img](https://github.com/AnttoniC/cloud-deployment-tool/blob/main/Cluster/Aws-CLI/IMG/acessoAzure.png) <br>
 
