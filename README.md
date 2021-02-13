@@ -2,7 +2,7 @@
 
 ## Execução do Script 
 <br>
-O script tem como objetivo construir um cluster na plataforma de nuvem pública AWS e Azure, permitindo aos desenvolvedores implantar aplicativos de microsserviços sem gerenciar máquinas virtuais, armazenamento ou rede.
+O script tem como objetivo construir um cluster na plataforma de nuvem pública AWS ou Azure, permitindo aos desenvolvedores implantar aplicativos de microsserviços sem gerenciar máquinas virtuais, armazenamento ou rede.
 <br>
 obs: (Antes de executar esse script certifique que o ambiente de execução preparado)<br>
 
