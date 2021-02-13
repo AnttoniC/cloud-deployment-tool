@@ -32,7 +32,7 @@ AZ_REPO=$(lsb_release -cs)
 
 
 ## Entrar no Azure com a CLI do Azure
-Execute a CLI do Azure com o `az` comando. Para entrar , use o comando `az login`. 
+Execute a CLI do Azure com o `az` comando. Para entrar , use o comando `az login`. <br> 
 `az login`
 
 
