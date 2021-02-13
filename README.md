@@ -17,25 +17,25 @@ Instalção do azure-cli e configuração.<br>
 [AZURE-CLI](https://github.com/AnttoniC/cloud-deployment-tool/tree/main/Cluster/Azure-CLI)<br>
 
 ## Opções de execução do Script
-Para visualizar as informações sobre os comandos internos, use a opção -h.
+Para visualizar as informações sobre os comandos internos, use a opção **-h**.
 Executando o camando sem opções ele retornara um usage.
 <br>
 
 `./cluster -h`<br>
 `./cluster`<br>
-![img](https://github.com/AnttoniC/Gerencia/blob/master/Img/zab2.jpg)
+![img](https://github.com/AnttoniC/cloud-deployment-tool/blob/main/Cluster/Aws-CLI/IMG/-h.png)
 <br>
 
-Para executar o cluster na aws ou azure, use a opção -c , sendo os paramentos aceitos _aws para AWS e _azure para Azure. 
+Para executar o cluster na aws ou azure, use a opção **-c** , sendo os paramentos aceitos **_aws** para AWS e **_azure** para Azure. 
 
 `./cluster -c _aws`<br>
 `./cluster -c _azure`<br>
 
-Para escolher a quantidade de nós que deseja exceutar no no cluster, use a opção -n , as opções aceita de -n são(2,4,6 e 8).<br> 
+Para escolher a quantidade de nós que deseja exceutar no no cluster, use a opção **-n** , as opções aceita de **-n** são(2,4,6 e 8).<br> 
 
 `./cluster -n 2`<br>
 
-Para escolher o tipo de VM ou Instancia do seu cluster, use a opção -i , dependendo de qual nuvem você escollher as opções mudam, sendo as opções aceitas para aws (t2.micro, t2.small e t2.medium) e para azure (Standard_B1s e Standard_B1ms)
+Para escolher o tipo de VM ou Instancia do seu cluster, use a opção **-i** , dependendo de qual nuvem você escollher as opções mudam, sendo as opções aceitas para aws (**t2.micro, t2.small e t2.medium**) e para azure (**Standard_B1s e Standard_B1ms**)
 
 Na aws:<br>
 `./cluster -i t2.micro`<br>
