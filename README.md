@@ -21,7 +21,7 @@ Para visualizar as informações sobre os comandos internos, use a opção **-h*
 Executando o camando sem opções ele retornara um usage.
 <br>
 Com o comando **chmod** vamos tornar os scripts executáveis. <br>
-`chmod +x cluster.sh deployAzure.sh deployAWS.sh`<br>
+'''chmod +x cluster.sh deployAzure.sh deployAWS.sh''' <br>
 
 `./cluster -h`<br>
 `./cluster`<br>
