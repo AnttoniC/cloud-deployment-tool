@@ -48,18 +48,17 @@ while getopts "c:n:i:h" opt; do
 	((c == "_aws" || c == "_azure" ))
       ;;
       n) NODE="$OPTARG"
-        ((n == 2 || n == 4 || n == 6 || n == 8)) || usage
+        ((n == 2 || n == 4 || n == 6 || n == 8))
       ;;
       i) TYPE="$OPTARG"
       ;;
       h) ajuda
       ;;
-      *) usage
+      *) usage	
       ;;
     esac
 done
 
-echo $CLOUD
 if [ -z "$TYPE" ]; then
   usage  
   exit 1 # error
@@ -67,39 +66,45 @@ else
   if [ -n "$NODE" ]; then
     echo "$NODE and $TYPE"
   else
-    usage
+   usage
   fi
 fi 
 
 #Se o tipo de intancia for da aws ele deve executar na aws 
-declare -a arrType_aws=("t2.micro" "t2.small" "t2.medium")
+#declare -a arrType_aws=("t2.micro" "t2.small" "t2.medium")
 if [ $CLOUD == "_aws" ]; then
+    declare -a arrType_aws=("t2.micro" "t2.small" "t2.medium")
     for i in "${arrType_aws[@]}"
     do
+       declare -a arrType_aws=("t2.micro" "t2.small" "t2.medium")
        if [ "$i" == "$TYPE" ]; then
-	 echo "$i"
-         ./deployAWS.sh
-       else
-         echo "Erro na execução do Cluster na AWS"
-	 usage
-	 echo "./cluster.sh -h para ver as opções"
+	 ./deployAWS.sh
        fi
     done
-elif [ $CLOUD == "_azure" ]; then
+       if [ $i != $TYPE ]; then
+         echo "Erro na execução do Cluster na AWS"
+	 echo "./cluster.sh -h para ver as opções"
+       else
+	 usage
+       fi
+
 #Se o tipo de intancia for da azure ele deve executar na azure 
-declare -a arrType_azure=("Standard_B1s" "Standard_B1ms")
+#declare -a arrType_azure=("Standard_B1s" "Standard_B1ms")
+elif [ $CLOUD == "_azure" ]; then
+    declare -a arrType_azure=("Standard_B1s" "Standard_B1ms")
     for e in "${arrType_azure[@]}"
     do
        if [ "$e" == "$TYPE" ]; then
-	 echo "$e"
        	 ./deployAzure.sh
-       else
-         echo "Erro na execução do Cluster na Azure"
-	 usage
-	 echo "./cluster.sh -h para ver as opções"
-	fi
+       fi
     done
-
+       if [ $e != $TYPE ]; then
+         echo "Erro na execução do Cluster na Azure"
+	 echo "./cluster.sh -h para ver as opções"
+       else
+	 usage
+       fi
+    
 else
  echo "$TYPE não é valido!!"
 fi
