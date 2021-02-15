@@ -71,7 +71,6 @@ else
 fi 
 
 #Se o tipo de intancia for da aws ele deve executar na aws 
-#declare -a arrType_aws=("t2.micro" "t2.small" "t2.medium")
 if [ $CLOUD == "_aws" ]; then
     declare -a arrType_aws=("t2.micro" "t2.small" "t2.medium")
     for i in "${arrType_aws[@]}"
@@ -89,7 +88,6 @@ if [ $CLOUD == "_aws" ]; then
        fi
 
 #Se o tipo de intancia for da azure ele deve executar na azure 
-#declare -a arrType_azure=("Standard_B1s" "Standard_B1ms")
 elif [ $CLOUD == "_azure" ]; then
     declare -a arrType_azure=("Standard_B1s" "Standard_B1ms")
     for e in "${arrType_azure[@]}"
