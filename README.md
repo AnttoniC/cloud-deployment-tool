@@ -4,7 +4,7 @@
 <br>
 O script tem como objetivo construir um cluster na plataforma de nuvem pública AWS ou Azure, permitindo aos desenvolvedores implantar aplicativos de microsserviços sem gerenciar máquinas virtuais, armazenamento ou rede.
 <br>
-obs: (Antes de executar esse script certifique que o ambiente de execução preparado)<br>
+obs: (Antes de executar esse script certifique que o ambiente de execução está preparado)<br>
 
 ## Pré-requisitos
 
@@ -20,6 +20,8 @@ Instalção do azure-cli e configuração.<br>
 Para visualizar as informações sobre os comandos internos, use a opção **-h**.
 Executando o camando sem opções ele retornara um usage.
 <br>
+Com o comando **chmod** vamos tonar os script executáveis. <br>
+`chmod +x cluster.sh deployAzure.sh deployAWS.sh`
 
 `./cluster -h`<br>
 `./cluster`<br>
