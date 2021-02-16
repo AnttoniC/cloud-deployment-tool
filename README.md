@@ -178,7 +178,6 @@ Primeira vez.
 ```
 <br>
 Na Azure: <br>
-
 ```
 Acesse em outro terminal e execute a seguencia de comandos:
 eval $(ssh-agent -s) #Importando a chave do cluster para o controller acessar os nós.
