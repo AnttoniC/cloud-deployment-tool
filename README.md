@@ -97,9 +97,12 @@ Cluster criado.
 ```
 Para implantar um cluster na azure execute o seguinte comando:<br>
 
-Na etapa inicial da implantação na azure os recursos do cluster vão ser criado no Grupo de Recursos: <br>
 ```
+./cluster.sh -c _azure -n 2 -i Standard_B1s
 2 and Standard_B1s
+
+#Na etapa inicial da implantação na azure os recursos do cluster vão ser criado no Grupo de Recursos
+
 {
   "id": "/subscriptions/312b5621-1bf1-4857-b6ef-2a9a2a5c222e/resourceGroups/RG214224",
   "location": "southcentralus",
@@ -111,10 +114,10 @@ Na etapa inicial da implantação na azure os recursos do cluster vão ser criad
   "tags": null,
   "type": "Microsoft.Resources/resourceGroups"
 }
-```
-Nessa parte da implatação estamos criando uma conta de armazenmento para Grupo de recursos que foi criado: <br>
 
-```
+
+#Nessa parte da implatação estamos criando uma conta de armazenmento para Grupo de recursos que foi criado
+
  - Running .. 
 
   "primaryLocation": "southcentralus",
@@ -133,9 +136,9 @@ Nessa parte da implatação estamos criando uma conta de armazenmento para Grupo
   "tags": {},
   "type": "Microsoft.Storage/storageAccounts"
 }
-```
-Criando chave publica para acessar o cluster.
-```
+
+#Criando chave publica para acessar o cluster.
+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/jarvis/.ssh/Key_Azure.
 Your public key has been saved in /home/jarvis/.ssh/Key_Azure.pub.
