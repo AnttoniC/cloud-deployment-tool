@@ -22,7 +22,6 @@ Com o comando **chmod** vamos tornar os scripts executáveis. <br>
 `chmod +x cluster.sh deployAzure.sh deployAWS.sh`
 
 Para visualizar as informações sobre os comandos internos, use a opção **-h**.
-Executando o camando sem opções ele retornara um usage.
 <br>
 
 ```
@@ -56,6 +55,11 @@ EXEMPLOS DE EXECUÇÃO
         Implantando Cluster na AWS
 
         ./cluster.sh -c _aws -n 2 -i t2.micro
+
+```
+Executando o camando sem opções ele retornara um usage. <br>
+```
+./cluster.sh
 Usage: ./cluster.sh -c [_aws ou _azure] [-n <2|4|6|8>] [-i <string>]
 help: ./cluster.sh -h
 
