@@ -12,17 +12,21 @@ Veja a seguir um resumo dos comandos de instalação explicados a seguir que voc
 
 ## Opção 1: Instalar a AWS CLI versão 1 usando o instalador empacotado com sudo
 Para obter a versão mais recente da AWS CLI, use o seguinte bloco de comandos:<br>
-`curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"`<br>
-`unzip awscli-bundle.zip` <br>
-`sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws`
+```
+curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+unzip awscli-bundle.zip
+sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+```
 
 ## Opção 2: Instalar a AWS CLI versão 1 usando pip
 
 Se você ainda não tem o pip instalado, você pode instalá-lo usando o script que o Python Packaging Authority fornece. Execute pip --version para ver se a sua versão do Linux já inclui Python e pip. Se o Python versão 3 ou posterior estiver instalado, recomendamos usar o comando pip3.<br>
 
 ## Etapa 1 - Instalar o pip
-`sudo apt update`
-`sudo apt install python3-pip`
+```
+sudo apt update
+sudo apt install python3-pip
+```
 
 ## Etapa 2 - Para obter a versão mais recente da AWS CLI, use o seguinte bloco de comandos:
 `pip3 install awscli --upgrade --user`
@@ -54,6 +58,12 @@ Faça download da suas crendencias, esta é a única oportunidade de visualizar 
 ![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/chaveDeAcesso.png)<br>
 
 ## Entrar com as credenciais do usuário IAM através do comando:
-`aws configure`<br>
-No campo *Deafault region name* vamos utilizar a região **us-east-1** Leste dos EUA (Norte da Virgínia) 
-![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/awsConfigure.png)
+No campo *Deafault region name* vamos utilizar a região **us-east-1** Leste dos EUA (Norte da Virgínia) <br>
+```
+aws configure
+
+AWS Access Key ID [****************TXCG]:
+AWS Secret Access Key [****************Wnjw]:
+Default region name [us-east-1]:
+Default output format [None]:
+```
