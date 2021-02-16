@@ -10,6 +10,10 @@
 As etapas a seguir permitem que você instale a AWS CLI versão 1 pela linha de comando em qualquer compilação do Linux ou do macOS.<br>
 Veja a seguir um resumo dos comandos de instalação explicados a seguir que você pode recortar e colar para executar como um único conjunto de comandos.<br>
 
+Algumas distribuições linux tem o pacote `awscli` disponível em repositórios para outros gerenciadores de pacotes, como `apt` e `yum`. <br>
+Executando o comando abaixo ele irar verficar sem está disponivel no seu gerenciador de pacotes. <br>
+`apt search awscli`
+
 ## Opção 1: Instalar a AWS CLI versão 1 usando o instalador empacotado com sudo
 Para obter a versão mais recente da AWS CLI, use o seguinte bloco de comandos:<br>
 ```
