@@ -164,7 +164,7 @@ The key's randomart image is:
 Cluster criado!!
 ```
 
-## Acessando o Clsuter
+## Acessando o Cluster
 
 Na aws: <br>
 ```
