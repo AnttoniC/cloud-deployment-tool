@@ -59,18 +59,6 @@ while getopts "c:n:i:h" opt; do
     esac
 done
 
-
-#if [ $NODE ]; then
-#     declare -a arrType=("2" "4" "6" "8")
-#     for j in "${arrType[@]}"
-#     do
-#       if [ $NODE -ne $j ]; then
-#           echo $j
-#       fi
-#      done
-#fi
-
-
 if [ -z "$TYPE" ] || [ -z "$CLOUD" ] ; then
   usage  
   exit 1 # error
@@ -95,7 +83,6 @@ if [ $CLOUD == "_aws" ]; then
     done
        if [ $i != $TYPE ]; then
          echo "Erro na execução do Cluster na AWS"
-#         echo "$TYPE não é valido!!"
 	 echo "./cluster.sh -h para ver as opções"
        else
 	 usage
@@ -112,7 +99,6 @@ elif [ $CLOUD == "_azure" ]; then
     done
        if [ $e != $TYPE ]; then
          echo "Erro na execução do Cluster na Azure"
- #        echo "$TYPE não é valido!!"
 	 echo "./cluster.sh -h para ver as opções"
        else
 	 usage
@@ -123,4 +109,3 @@ else
       echo "$CLOUD não é valido!!"
    fi 
 fi
-
