@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#set -x
+
 CLOUD=""
 NODE=""
 TYPE=""
@@ -7,7 +9,7 @@ export NODE
 export TYPE
 
 usage() { echo "Usage: $0 -c [_aws ou _azure] [-n <2|4|6|8>] [-i <string>]"
-	  echo "help: $0 -h"; }
+	  echo "help: $0 -h" 1>&2; exit 1; }
 
 ajuda() {   
             echo ""
@@ -45,10 +47,8 @@ ajuda() {
 while getopts "c:n:i:h" opt; do
     case $opt in
       c) CLOUD="$OPTARG" 
-	((c == "_aws" || c == "_azure" ))
       ;;
       n) NODE="$OPTARG"
-        ((n == 2 || n == 4 || n == 6 || n == 8))
       ;;
       i) TYPE="$OPTARG"
       ;;
@@ -59,9 +59,22 @@ while getopts "c:n:i:h" opt; do
     esac
 done
 
-if [ -z "$TYPE" ]; then
+
+#if [ $NODE ]; then
+#     declare -a arrType=("2" "4" "6" "8")
+#     for j in "${arrType[@]}"
+#     do
+#       if [ $NODE -ne $j ]; then
+#           echo $j
+#       fi
+#      done
+#fi
+
+
+if [ -z "$TYPE" ] || [ -z "$CLOUD" ] ; then
   usage  
   exit 1 # error
+
 else
   if [ -n "$NODE" ]; then
     echo "$NODE and $TYPE"
@@ -82,6 +95,7 @@ if [ $CLOUD == "_aws" ]; then
     done
        if [ $i != $TYPE ]; then
          echo "Erro na execução do Cluster na AWS"
+#         echo "$TYPE não é valido!!"
 	 echo "./cluster.sh -h para ver as opções"
        else
 	 usage
@@ -98,11 +112,15 @@ elif [ $CLOUD == "_azure" ]; then
     done
        if [ $e != $TYPE ]; then
          echo "Erro na execução do Cluster na Azure"
+ #        echo "$TYPE não é valido!!"
 	 echo "./cluster.sh -h para ver as opções"
        else
 	 usage
        fi
     
 else
- echo "$TYPE não é valido!!"
+   if [ $CLOUD != "_aws" ] || [ $CLOUD != "_azure" ]; then
+      echo "$CLOUD não é valido!!"
+   fi 
 fi
+
