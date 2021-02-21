@@ -70,7 +70,7 @@ Para executar o cluster na aws ou azure, use a opção **-c** , sendo os paramen
 `./cluster.sh -c _aws`<br>
 `./cluster.sh -c _azure`<br>
 
-Para escolher a quantidade de nós que deseja exceutar no no cluster, use a opção **-n** , as opções aceita de **-n** são(2,4,6 e 8).<br> 
+Para escolher a quantidade de nós que deseja executar no cluster, use a opção **-n** , as opções aceita de **-n** são(2,4,6 e 8).<br> 
 
 `./cluster -n 2`<br>
 
