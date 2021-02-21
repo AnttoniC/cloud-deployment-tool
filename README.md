@@ -57,7 +57,7 @@ EXEMPLOS DE EXECUÇÃO
         ./cluster.sh -c _aws -n 2 -i t2.micro
 
 ```
-Executando o camando sem opções ele retornara um usage. <br>
+Executando o comando sem opções ele retornara um usage. <br>
 ```
 ./cluster.sh
 Usage: ./cluster.sh -c [_aws ou _azure] [-n <2|4|6|8>] [-i <string>]
