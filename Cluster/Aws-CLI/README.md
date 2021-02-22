@@ -43,25 +43,25 @@ No painel de navegação, escolha *Usuários* e depois *Adicionar usuário*.<br>
 
 Siga os seguines passos abaixo:<br>
 **1 passo:**
-Criar nome do seu usuario e selecionar a caixa *Acesso Programático*
+Criar nome do seu usuario e selecionar a caixa *Acesso Programático.*
 ![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/add_IAM.png)<br>
 
 **2 passo:**
-Criar um grupo para o usuario que estamos criando e atribuir políticas de acesso<br>
-![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/addGroup01.png)
-Digite o nome do seu grupo e selecione a permissão *AdministratorAccess* para ter acessos aos recursos e serviços através da AWS-CLI
-![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/groupCli.png)
-Selecione o grupo que criou
+Criar um grupo para o usuario que estamos criando e atribuir políticas de acesso.<br>
+![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/addGroup01.png)<br>
+Digite o nome do seu grupo e selecione a permissão *AdministratorAccess* para ter acessos aos recursos e serviços através da AWS-CLI. <br>
+![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/groupCli.png) <br>
+Selecione o grupo que criou. <br>
 ![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/addGroup02.png)<br>
 
 **3 passo:**
-Revise as escolhas para ter certeza que não esqueceu nada e clique em *Criar Usuario*
-![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/criarUser.png)
-Faça download da suas crendencias, esta é a única oportunidade de visualizar ou fazer download das chaves de acesso secretas
+Revise as escolhas para ter certeza que não esqueceu nada e clique em *Criar Usuario*. <br>
+![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/criarUser.png) <br>
+Faça download da suas crendencias, esta é a única oportunidade de visualizar ou fazer download das chaves de acesso secretas. <br>
 ![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/chaveDeAcesso.png)<br>
 
 ## Entrar com as credenciais do usuário IAM através do comando:
-No campo *Deafault region name* vamos utilizar a região **us-east-1** Leste dos EUA (Norte da Virgínia) <br>
+No campo *Deafault region name* vamos utilizar a região **us-east-1** Leste dos EUA (Norte da Virgínia). <br>
 ```
 aws configure
 
