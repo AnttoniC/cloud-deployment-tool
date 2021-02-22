@@ -9,7 +9,7 @@
 ## Instalação do AWS CLI no Linux
 As etapas a seguir permitem que você instale a AWS CLI versão 1 pela linha de comando em qualquer versão do Linux.<br>
 Algumas distribuições linux tem o pacote `awscli` disponível em repositórios para outros gerenciadores de pacotes, como `apt` e `yum`. <br>
-Executando o comando abaixo ele irar verficar se a `awscli` está disponivel no seu gerenciador de pacotes. <br>
+Executando o comando abaixo ele irá verficar se a `awscli` está disponível no seu gerenciador de pacotes. <br>
 `apt search awscli`
 
 Veja abaixo um resumo dos comandos de instalação que você pode recortar e colar para executar como um único comando.<br>
