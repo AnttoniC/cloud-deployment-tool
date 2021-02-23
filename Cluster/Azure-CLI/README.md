@@ -24,8 +24,10 @@ sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
 `curl -sL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null`
 
 ## Etapa 3 - Adicione o repositório de software da CLI do Azure (pule esta etapa em distribuições ARM64 Linux)
+```
 AZ_REPO=$(lsb_release -cs)
-`echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list`
+echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
+```
 
 ## Etapa 4 - Atualize as informações do repositório e instale o azure-cli pacote
 ```
