@@ -16,9 +16,10 @@ Existem duas opções para instalar a CLI do Azure em seu sistema. Primeiro, voc
 Se você preferir um processo de instalação passo a passo, conclua as etapas a seguir para instalar a CLI do Azure.<br>
 
 ## Etapa 1 - Obtenha os pacotes necessários para o processo de instalação
-`sudo apt-get update`
-`sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg`
-
+```
+sudo apt-get update
+sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
+```
 ## Etapa 2 - Baixe e instale a chave de assinatura da Microsoft
 `curl -sL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null`
 
@@ -27,10 +28,10 @@ AZ_REPO=$(lsb_release -cs)
 `echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list`
 
 ## Etapa 4 - Atualize as informações do repositório e instale o azure-cli pacote
-`sudo apt-get update`
-`sudo apt-get install azure-cli`
-
-
+```
+sudo apt-get update
+sudo apt-get install azure-cli 
+```
 ## Entrar no Azure com a CLI do Azure
 Execute a CLI do Azure com o `az` comando. Para entrar , use o comando `az login`. <br> 
 `az login`
