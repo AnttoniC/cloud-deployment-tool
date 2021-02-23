@@ -2,13 +2,13 @@
 
 ## Execução do Script 
 <br>
-O script tem como objetivo construir um cluster na plataforma de nuvem pública AWS ou Azure, permitindo aos desenvolvedores implantar aplicações sem gerenciar máquinas virtuais, armazenamento ou rede.
+O script tem como objetivo construir um cluster nas plataformas de nuvens públicas AWS ou Azure. Permitindo aos desenvolvedores implantar aplicações sem gerenciar máquinas virtuais, armazenamento ou rede.
 <br>
-obs: (Antes de executar esse script certifique que o ambiente de execução está preparado)<br>
+obs: (Antes de executar esse script certifique-se que o ambiente em execução está preparado)<br>
 
 ## Pré-requisitos
 
-É necessário que o usuário tenha um conta na aws e na azure, para poder realizar a instalação e configuração do aws-cli e azure-cli, segue abaixo um link para instalação e configuração:
+É necessário que o usuário tenha um conta na aws e na azure, para realizar a instalação e configuração do aws-cli e azure-cli. Segue abaixo um link para instalação e configuração:
 
 Instalção do aws-cli e configuração.<br>
 [AWS-CLI](https://github.com/AnttoniC/cloud-deployment-tool/tree/main/Cluster/Aws-CLI)<br>
