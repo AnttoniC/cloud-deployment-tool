@@ -58,6 +58,10 @@ while getopts "c:n:i:h" opt; do
       ;;
     esac
 done
+if [ "2" != "$NODE" ] && [ "4" != "$NODE" ] && [ "6" != "$NODE" ] && [ "8" != "$NODE" ] ; then
+   echo "$NODE não é valido!!"
+   usage
+fi
 
 if [ -z "$TYPE" ] || [ -z "$CLOUD" ] ; then
   usage  
