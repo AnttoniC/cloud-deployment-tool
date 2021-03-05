@@ -44,7 +44,7 @@ No painel de navegação, escolha *Usuários* e depois *Adicionar usuário*.<br>
 Siga os seguines passos abaixo:<br>
 **1 passo:**
 Criar nome do seu usuario e selecionar a caixa *Acesso Programático.*
-![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/add_IAM.png)<br>
+![img](https://github.com/AnttoniC/TCC/blob/master/Ferramenta/MINP_Aws/ClusterAws/Aws-CLI/IMG/add_IAM.png) <br>
 
 **2 passo:**
 Criar um grupo para o usuario que estamos criando e atribuir políticas de acesso.<br>
