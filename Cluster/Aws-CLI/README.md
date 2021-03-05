@@ -62,6 +62,7 @@ Faça download da suas crendencias, esta é a única oportunidade de visualizar 
 
 ## Entrar com as credenciais do usuário IAM através do comando:
 No campo *Deafault region name* vamos utilizar a região **us-east-1** Leste dos EUA (Norte da Virgínia). <br>
+**Obs: Para o cluster executar com exito a região tem que ser us-east-1** <br>
 ```
 aws configure
 
