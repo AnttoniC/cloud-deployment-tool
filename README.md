@@ -67,20 +67,20 @@ help: ./cluster.sh -h
 
 Para executar o cluster na aws ou azure, use a opção **-c** , sendo os paramentos aceitos **_aws** para AWS e **_azure** para Azure. 
 
-`./cluster.sh -c _aws`<br>
-`./cluster.sh -c _azure`<br>
+./cluster.sh **-c _aws** -n 2 -i t2.micro <br>
+./cluster.sh **-c _azure** -n 2 -i Standard_B1s <br>
 
 Para escolher a quantidade de nós que deseja executar no cluster, use a opção **-n** , as opções aceita de **-n** são(2,4,6 e 8).<br> 
 
-`./cluster -n 2`<br>
+./cluster.sh -c _aws **-n 2** -i t2.micro<br>
 
 Para escolher o tipo de VM ou Instancia do seu cluster, use a opção **-i** , dependendo de qual nuvem você escollher as opções mudam, sendo as opções aceitas para aws (**t2.micro, t2.small e t2.medium**) e para azure (**Standard_B1s e Standard_B1ms**)
 
 Na aws:<br>
-`./cluster.sh -i t2.micro`<br>
+./cluster.sh -c _aws -n 2 **-i t2.micro** <br>
 
 Na azure:<br>
-`./cluster.sh -i Standard_B1s`<br>
+./cluster.sh -c _azure -n 2 **-i Standard_B1s** <br>
 
 Para implantar um cluster na aws execute o seguinte comando:<br>
 
