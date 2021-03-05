@@ -71,3 +71,7 @@ AWS Secret Access Key [****************Wnjw]:
 Default region name [us-east-1]:
 Default output format [None]:
 ```
+
+Para verificar se o `aws configure`foi configurado com sucesso execute o seguinte comando: <br>
+`aws ec2 describe-vpcs` <br>
+Se retornar as informações das vcps da aws significa que está configurado, caso contrário as informações colocadas estão erradas, repita o procedimento executando o comando `aws configure` novamente.
