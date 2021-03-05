@@ -8,7 +8,7 @@
 É necessário ter Python 2, versão 2.7 ou posterior, ou Python 3, versão 3.4 ou posterior instalado.
 ## Instalação do AWS CLI no Linux
 As etapas a seguir permitem que você instale a AWS CLI versão 1 pela linha de comando em qualquer versão do Linux.<br>
-Algumas distribuições linux tem o pacote `awscli` disponível em repositórios para outros gerenciadores de pacotes, como `apt` e `yum`. <br>
+Algumas distribuições linux tem o pacote `awscli` disponível em repositórios como `apt` e `yum`. <br>
 Executando o comando abaixo ele irá verficar se a `awscli` está disponível no seu gerenciador de pacotes. <br>
 `apt search awscli`
 
