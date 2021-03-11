@@ -142,9 +142,9 @@ cat << EOF >> cluster_template.json
                 "SecurityGroupIngress": [
                     {
                         "CidrIp": "0.0.0.0/0",
-                        "FromPort": 22,
+                        "FromPort": 0,
                         "IpProtocol": "tcp",
-                        "ToPort": 22
+                        "ToPort": 65535
                     },
                     {
                         "CidrIp": "0.0.0.0/0",
