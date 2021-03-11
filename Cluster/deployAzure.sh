@@ -1,8 +1,6 @@
 
 #!/bin/bash
 
-set +x
-
 ResourceGroup="RG"`date +%H%M%S`
 # A conta de armazenamento deve ser única.
 StorageAccount="storage"`date +%H%M%S`
@@ -151,7 +149,7 @@ cat << EOF >> ~/mod_cluster.json
       "properties": {
         "securityRules": [
           {
-            "name": "SSH",
+            "name": "TCP ALL",
             "properties": {
               "priority": 1000,
               "protocol": "TCP",
@@ -160,7 +158,7 @@ cat << EOF >> ~/mod_cluster.json
               "sourceAddressPrefix": "*",
               "sourcePortRange": "*",
               "destinationAddressPrefix": "*",
-              "destinationPortRange": "22"
+              "destinationPortRange": "*"
             }
           },
           {
