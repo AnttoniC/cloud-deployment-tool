@@ -45,7 +45,7 @@ Execute o socket servidor.py: <br>
 
 ## Etapa 2 - Socket do cliente
 
-Vamos criar o arquivo cliente.py em cada no nós computes: <br>
+Vamos criar o arquivo cliente.py em cada nó computes do cluster: <br>
 
 Crie um arquivo cliente.py <br>
 
