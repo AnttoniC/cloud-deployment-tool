@@ -5,7 +5,7 @@ Objetivo desse exercício é mostrar que o cluster está configurado e o usuári
 
 ## Manipulando sockets via protocolo TCP
 
-Um soquete de rede é um ponto final de um fluxo de comunicação entre processos através de uma rede de computadores. Neste exercício vamos criar uma estrutura cliente/Servidor para o cluster criado, onde vamos o servidor controller vai ficar escutando e esperando as conexões dos nós (Computes).
+Um soquete de rede é um ponto final de um fluxo de comunicação entre processos através de uma rede de computadores. Neste exercício vamos criar uma estrutura cliente/Servidor para o cluster criado, onde o servidor controller vai ficar escutando e esperando as conexões dos nós (Computes).
 
 ## Etapa 1 - Socket do servidor
 
