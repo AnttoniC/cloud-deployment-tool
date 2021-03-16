@@ -76,7 +76,7 @@ else
 fi 
 
 #Se o tipo de intancia for da aws ele deve executar na aws 
-if [ $CLOUD == "_aws" ]; then
+if [ "$CLOUD" == "_aws" ]; then
     declare -a arrType_aws=("t2.micro" "t2.small" "t2.medium")
     for i in "${arrType_aws[@]}"
     do
@@ -85,7 +85,7 @@ if [ $CLOUD == "_aws" ]; then
 	 ./deployAWS.sh
        fi
     done
-       if [ $i != $TYPE ]; then
+       if [ "$i" != "$TYPE" ]; then
          echo "Erro na execução do Cluster na AWS"
 	 echo "./cluster.sh -h para ver as opções"
        else
@@ -93,7 +93,7 @@ if [ $CLOUD == "_aws" ]; then
        fi
 
 #Se o tipo de intancia for da azure ele deve executar na azure 
-elif [ $CLOUD == "_azure" ]; then
+elif [ "$CLOUD" == "_azure" ]; then
     declare -a arrType_azure=("Standard_B1s" "Standard_B1ms")
     for e in "${arrType_azure[@]}"
     do
@@ -101,7 +101,7 @@ elif [ $CLOUD == "_azure" ]; then
        	 ./deployAzure.sh
        fi
     done
-       if [ $e != $TYPE ]; then
+       if [ "$e" != "$TYPE" ]; then
          echo "Erro na execução do Cluster na Azure"
 	 echo "./cluster.sh -h para ver as opções"
        else
@@ -109,7 +109,7 @@ elif [ $CLOUD == "_azure" ]; then
        fi
     
 else
-   if [ $CLOUD != "_aws" ] || [ $CLOUD != "_azure" ]; then
+   if [ "$CLOUD" != "_aws" ] || [ "$CLOUD" != "_azure" ]; then
       echo "$CLOUD não é valido!!"
    fi 
 fi
