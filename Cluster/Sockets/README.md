@@ -2,7 +2,7 @@
 <br>
 
 ## Descrição do exercício
-Crie um cluster com 4 nós onde o controller vai está executando o **servidor.py** e os nós(compute) vão esta rodando o **cliente.py**, siga as etepas abaixo para relizar a configuração dos nós. Objetivo desse exercício é mostrar que o cluster está configurado e o usuário e está pronto para práticas distribuídas.
+Crie um cluster com 4 nós onde o controller vai está executando o **servidor.py** e os nós(compute) vão está rodando o **cliente.py**, siga as etepas abaixo para relizar a configuração dos nós. Objetivo desse exercício é mostrar que o cluster está configurado e o usuário está pronto para práticas distribuídas.
 
 ## Manipulando sockets via protocolo TCP
 
