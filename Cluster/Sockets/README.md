@@ -1,7 +1,9 @@
 # Sockets com Python  
 <br>
+
 ## Descrição do exercício
 Crie um cluster com 4 nós onde o controller vai está executando o **servidor.py** e os nós(compute) vão esta rodando o **cliente.py**, siga as instruções a seguir. Objetivo desse exercício é mostrar que o cluster está configurado e o usuário e está pronto para práticas distribuídas.
+
 ## Manipulando sockets via protocolo TCP
 
 Um soquete de rede é um ponto final de um fluxo de comunicação entre processos através de uma rede de computadores. Neste exercício vamos criar uma estrutura cliente/Servidor para o cluster criado, onde o servidor controller vai ficar escutando e esperando as conexões dos nós (Computes).
