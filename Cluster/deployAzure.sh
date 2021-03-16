@@ -149,7 +149,7 @@ cat << EOF >> ~/mod_cluster.json
       "properties": {
         "securityRules": [
           {
-            "name": "TCP ALL",
+            "name": "TCP_ALL",
             "properties": {
               "priority": 1000,
               "protocol": "TCP",
@@ -624,11 +624,11 @@ do
 STATUS=$(az deployment group show -g $ResourceGroup -n mod_cluster --query "properties.provisioningState" --output tsv)
 #echo "Cluster em criação..."
 sleep 10
-if [ $STATUS = "Succeeded" ];
+if [ "$STATUS" = "Succeeded" ];
 then
     var=0
     echo "Cluster criado!!"
-elif [ $STATUS = "Failed" ];
+elif [ "$STATUS" = "Failed" ];
 then
     var=0
     echo "Erro ao criado cluster!!"
