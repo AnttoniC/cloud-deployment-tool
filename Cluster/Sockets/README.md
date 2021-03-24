@@ -6,7 +6,7 @@ Um soquete de rede é um ponto final de um fluxo de comunicação entre processo
 
 Cluster é um termo em inglês que significa “aglomerar” ou “aglomeração” e pode ser aplicado em vários contextos. No caso da computação, o termo define uma arquitetura de sistema capaz de combinar vários computadores para trabalharem em conjunto. O cluster a ser criado nesse exercício vai conter cinco máquinas virtuais sendo 1 controller e 4 computes, que são os nós. <br>
 
-![img](https://github.com/AnttoniC/cloud-deployment-tool/blob/main/Cluster/Aws-CLI/IMG/cluster4.png)
+![img](https://github.com/AnttoniC/cloud-deployment-tool/blob/main/Cluster/Aws-CLI/IMG/cluster4n.png)
 
 ## Descrição do exercício
 Crie um cluster com 4 nós onde o controller vai está executando o **servidor.py** e os nós(compute) vão está rodando o **cliente.py**. Siga as etapas abaixo para realizar a configuração dos nós. Objetivo desse exercício é mostrar que o cluster está configurado e o usuário está pronto para práticas distribuídas.
