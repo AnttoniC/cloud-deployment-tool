@@ -1,5 +1,6 @@
 # Sockets com Python  
 <br>
+
 ## Manipulando sockets via protocolo TCP
 
 Um soquete de rede é um ponto final de um fluxo de comunicação entre processos através de uma rede de computadores. Neste exercício vamos criar uma estrutura cliente/Servidor para o cluster criado, onde o servidor controller vai ficar escutando e esperando as conexões dos nós (Computes). <br>
