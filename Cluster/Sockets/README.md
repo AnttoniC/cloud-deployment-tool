@@ -81,7 +81,7 @@ Execute o socket servidor.py: <br>
 
 
 ## Etapa 2 - Socket do cliente
-
+**Obs(Algo criar um cliente.py no primeiro nó automaticamente o arquivo já vai está disponível nos demais nó basta da um ls para verificar)**
 Vamos criar o arquivo cliente.py em cada nó computes do cluster: <br>
 
 Crie um arquivo cliente.py <br>
