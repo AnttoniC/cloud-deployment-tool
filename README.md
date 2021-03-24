@@ -1,5 +1,6 @@
 # cloud-deployment-tool
 
+[Exercício](https://github.com/AnttoniC/cloud-deployment-tool/tree/main/Cluster/Sockets)<br>
 ## Execução do Script 
 <br>
 O script tem como objetivo construir um cluster nas plataformas de nuvens públicas AWS ou Azure. Permitindo aos desenvolvedores implantar aplicações sem gerenciar máquinas virtuais, armazenamento ou rede.
