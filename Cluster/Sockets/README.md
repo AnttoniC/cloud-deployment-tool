@@ -85,6 +85,7 @@ Vamos criar o arquivo cliente.py em cada nó computes do cluster: <br>
 
 Crie um arquivo cliente.py <br>
 
+
 Cole o seguinte conteudo no arquivo cliente.py: <br>
 
 ```
