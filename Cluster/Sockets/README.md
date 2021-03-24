@@ -18,7 +18,7 @@ Para criar um cluster na aws execute o seguinte comando:<br>
 Após a execução do comando para criar o cluster com 4 nós, você receberá a seguinte saída no terminal:
 Na aws: <br>
 ```
-Acesse em outro terminal e execute a sequência de comandos para acessar o servidor **controller**:
+Acesse em outro terminal e execute a sequência de comandos para acessar o servidor controller:
 eval $(ssh-agent -s) #Importando a chave do cluster para o controller acessar os nós.
 ssh-add clusterKey.pem 
 ssh -A ubuntu@3.239.169.121 #Acessando o controller e compartilhando a chave para acessar os nós
@@ -30,7 +30,7 @@ Primeira vez.
 Na Azure: <br>
 
 ```
-Acesse em outro terminal e execute a sequência de comandos para acessar o servidor **controller**:
+Acesse em outro terminal e execute a sequência de comandos para acessar o servidor controller:
 eval $(ssh-agent -s) #Importando a chave do cluster para o controller acessar os nós.
 ssh-add ~/.ssh/Key_Azure #Passphrase da chave criada é (azure)
 ssh -A ubuntu@157.55.185.117 #Acessando o controller e compartilhando a chave para acessar os nós
