@@ -41,8 +41,8 @@ Primeira vez.
 ```
 <br>
 
-Quando acessar o controller através da sequência de comando da saída acima, execute o comando "**ls**" para listar os arquivos do diretório onde você está vai aparecer um arquivo IPs.txt contendo os IPs dos nós do Cluster. <br>
-Após conseguir acessar o controller siga para etapa 1, no servidor controller vai ficar rodando o socket servidor.py, faça as alterações que a etapa e solicita. <br>
+Quando acessar o controller através da sequência de comando da saída acima, execute o comando "**ls**" para listar os arquivos do diretório onde vai aparecer um arquivo **IPs.txt** contendo os IPs dos nós do Cluster. <br>
+Após conseguir acessar o controller siga para etapa 1, no servidor controller vai ficar rodando o socket servidor.py, faça as alterações que a etapa 1 e solicita. <br>
 
 
 ## Etapa 1 - Socket do servidor
