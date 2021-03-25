@@ -79,18 +79,17 @@ Lembre de colocar o IP privado do controller, com o comando abaixo ele mostra o 
 Execute o socket servidor.py: <br>
 
 `python3 servidor.py`
-
+<br>
+Após a execução o servidor vai ficar aguardando as conexões dos nós, siga para etapa 2 <br>
 
 ## Etapa 2 - Socket do cliente
 
-**Obs(Ao criar um cliente.py no primeiro nó automaticamente o arquivo já vai está disponível nos demais nós basta da um ls para verificar)**
+Acesse em outro terminal o controller. Para acessar os nós(computes) você terá que acessar o controller e depois fazer um `ssh <IP-Compute>` para acessar os computes, na `/home/ubuntu` do controller tem um arquivo IPs.txt com os IPs do nós.<br>
+
 Vamos criar o arquivo cliente.py em cada nó computes do cluster: <br>
-
-Para acessar os nós(computes) você terá que acessar o controller e depois fazer um `ssh <IP-Compute>` para acessar os computes, na `/home/ubuntu` do controller tem um arquivo IPs.txt com os IPs do nós.<br>
-
+**Obs(Ao criar um cliente.py no primeiro nó automaticamente o arquivo já vai está disponível nos demais nós basta da um ls para verificar)**
+<br>
 Crie um arquivo cliente.py <br>
-
-
 Cole o seguinte conteudo no arquivo cliente.py: <br>
 
 ```
