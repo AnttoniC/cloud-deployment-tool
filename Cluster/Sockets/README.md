@@ -17,7 +17,7 @@ Para criar um cluster na azure execute o seguinte comando: <br>
 Para criar um cluster na aws execute o seguinte comando:<br>
 `./cluster.sh -c _aws -n 4 -i t2.micro`<br>
 Após a execução do comando para criar o cluster com 4 nós, você receberá a seguinte saída no terminal:<br>
-**Obs(Lembre-se de deixar o cluster rodando em um terminal, para poder deletar depois da prática. Caso contrário você terá que excluir manualmente na plataforma(aws ou azure.)**
+**Obs(Lembre-se de deixar o cluster rodando em um terminal, para poder deletar depois da prática. Caso contrário você terá que excluir manualmente na plataforma(aws ou azure.)** <br>
 Na aws: <br>
 ```
 Acesse em outro terminal e execute a sequência de comandos para acessar o servidor controller:
