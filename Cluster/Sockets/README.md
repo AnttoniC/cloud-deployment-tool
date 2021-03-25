@@ -17,6 +17,7 @@ Para criar um cluster na azure execute o seguinte comando: <br>
 Para criar um cluster na aws execute o seguinte comando:<br>
 `./cluster.sh -c _aws -n 4 -i t2.micro`<br>
 Após a execução do comando para criar o cluster com 4 nós, você receberá a seguinte saída no terminal:<br>
+**Obs(Lembre-se de deixar o cluster rodando em um terminal, para poder deletar depois da prática. Caso contrário você terá que excluir manualmente na plataforma(aws ou azure.)**
 Na aws: <br>
 ```
 Acesse em outro terminal e execute a sequência de comandos para acessar o servidor controller:
@@ -81,8 +82,11 @@ Execute o socket servidor.py: <br>
 
 
 ## Etapa 2 - Socket do cliente
-**Obs(Ao criar um cliente.py no primeiro nó automaticamente o arquivo já vai está disponível nos demais nó basta da um ls para verificar)**
+
+**Obs(Ao criar um cliente.py no primeiro nó automaticamente o arquivo já vai está disponível nos demais nós basta da um ls para verificar)**
 Vamos criar o arquivo cliente.py em cada nó computes do cluster: <br>
+
+Para acessar os nós(computes) você terá que acessar o controller e depois fazer um `ssh <IP-Compute>` para acessar os computes, na `/home/ubuntu` do controller tem um arquivo IPs.txt com os IPs do nós.<br>
 
 Crie um arquivo cliente.py <br>
 
